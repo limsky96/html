@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #wrapper {
+           width : 960px;
+           text-align: center; /*전체 중앙정렬*/
+           overflow: hidden;
+       }
+       .header-text{
+            width: 960px;
+            background-color:blue;
+            color: white;
+            border: 1px solid #808080;
+            padding: 10px; /* 블럭 안 쪽 여백 */
+            margin: 0; /* 파란 블럭 바깥 여백 삭제, 0은 px없어도 됨 */
+            /* text-align: center; 본문만 중앙 정렬 */
+       }
+        .content {
+           width: 700px;
+           background-color: yellow;
+           border: 1px solid #808080;
+           float: left;
+          
+       }
+        .right-side {
+           width: 255px;
+           background-color: green;
+           border: 1px solid #808080;
+           float: left;
+          
+       }
+        footer {
+            clear: both;
+           width: 960px;
+           background-color: red;
+         
+       }
+   </style>
+
+
+
+</head>
+<body>
+    <div id="wrapper"> <!-- 감싸놓고 중앙정렬 시키려고 그룹화 시킴 -->
+        <header>
+           <h1 class="header-text">고정 그리드 레이아웃</h1>
+        </header>
+
+        <section class="content">
+           <h4>본문</h4>
+        </section>
+
+        <aside class="right-side"> <!-- section=aside -->
+           <h4>사이드바</h4>
+        </aside>
+
+        <footer>
+           <h4>푸터</h4>
+        </footer>
+
+     </div>
+</body>
+</html>

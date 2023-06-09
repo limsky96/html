@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000; /* ff: red, 00ff: green, 0000ff: blue */
+            font-weight: bold;
+            text-align: center;
+            visibility: hidden; /* 숨겨짐 */
+        }
+        body div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            background-color: #00ff00;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            margin: 100px 0 100px 0; /* top, right, bottom,left */
+        }
+        body div:nth-child(3){
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+        body div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        body div:nth-child(5){
+            background-color: #00ff00;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: inline;
+            /*  div의 디폴트 : block을 inline(span tag)으로 만들기 위해 display: inline; inline은 width, height가 안 먹음 */
+            margin: 10px 10px 10px 10px; /* inline tag가 top, bottom을 안 잡아줌  */
+        }
+        body div:nth-child(6){
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: inline; /* 5의 옆으로 옴 */
+        }
+        body div:nth-child(6){
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: inline;
+        }
+        body div:nth-child(7){
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: none; /* inline : 6에 다이렉트로 붙음, none : 사라짐 */
+        }
+        body div:nth-child(8){
+            width: 100px;
+            height: 100px;
+            background-color: #00ff00;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: inline;
+        }
+        body div:nth-child(9){
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block; /* inline(개행을 안 함)의 사이즈를 block(width, height를 가짐)으로 */
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+        content1
+    </div>
+
+    <div>
+        content2
+    </div>
+
+    <div>
+        content3
+    </div>
+
+    <div>
+        content4
+    </div>
+
+    <div>
+        content5
+    </div>
+
+    <div>
+        content6
+    </div>
+
+    <div>
+        content7
+    </div>
+
+    <div>
+        content8
+    </div>
+
+    <div>
+        content9
+    </div>
+
+</body>
+</html>
