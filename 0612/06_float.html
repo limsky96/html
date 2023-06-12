@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      
+        #con {
+            width: 800px;
+            border: 1px solid #cccccc;
+            text-align: center;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 5px;
+        }
+
+        #header {
+           border: 1px solid #cccccc;
+            text-align: center;
+            padding: 40px;
+        
+            
+        }
+
+        #nav {
+            border: 1px solid #cccccc;
+            text-align: center;
+            margin-top: 5px;
+        }
+        ul:after { content: ""; clear: both; display: block; }
+        
+        li {
+            list-style: none;
+            float: left;
+            width: 110px;
+            padding: 15px;
+            border: 1px solid #ccc;
+           
+        }
+        ul {
+            
+            margin: 10px;
+        }
+        
+        #wrap {
+           border: 1px solid #ccc;
+           margin-top: 5px;
+
+        }
+        #wrap:after { content: ""; clear: both; display: block; }
+        #content {
+            border: 1px solid #cccccc;
+            text-align: center;
+            height: 200px;
+            width: 640px;
+            margin: 10px;
+            float: left;
+            padding: 5px;
+            box-sizing: border-box; /* width값 안에서 들어감*/
+    
+        }
+        #banner {
+            border: 1px solid #cccccc;
+            text-align: center;
+            height: 200px;
+            width: 115px;
+            margin: 10px;
+            float: left;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        #footer {
+            margin-top: 5px;
+            clear: both;
+            border: 1px solid #cccccc;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="con">
+        <div id="header">
+            HEADER
+        </div>
+
+        <div id="nav">
+            <p>NAVIGATION</p>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+                <li>menu5</li>
+            </ul>
+        </div>
+
+        <div id="wrap">
+            <div id="content"> CONTENT </div>
+            <div id="banner"> BANNER </div>
+        </div>
+
+        <div id="footer">
+            FOOTER
+        </div>
+    </div>
+</body>
+</html>

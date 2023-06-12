@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            opacity: 0.7; /* 투명도 */
+        }
+
+        div:nth-child(1) { /* 영역줌 */
+            background-color: #ff0000;
+            position: absolute;
+            top: 0; /* 좌표 위치 */
+            left: 0;
+        }
+
+        div:nth-child(2) { /* 블럭태그에 상관없이 좌표 찍고 */
+            background-color: #00ff00;
+            position: absolute;
+            top: 50;
+            left: 50;
+        }
+        div:nth-child(3) {  /* 부모가 지정이 안되면 body를 기준으로 함 */
+            background-color: #0000ff;
+            position: absolute;
+            top: 100px; /* px안 붙이면 좌표가 부모엘리먼트 */
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div id="wrap">
+        <div class="content"></div>
+    </div>
+</body>
+</html>

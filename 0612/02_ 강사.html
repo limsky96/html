@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav {
+            width: 800px;
+            border: 1px solid #ccc;
+            margin: 0 auto; /* 중앙정렬 */
+            overflow: hidden; /* 집 나간 자식들을 잡아들이는 역할, 이걸 써야 #nav div가 안으로 들어감 */
+        }
+         
+        #nav div{
+            width: 150px;
+            height: 100px;
+            line-height: 100px; /* height, line-height를 맞추면 중앙정렬 */
+            float: left;
+            text-align: center;
+            font-size: 1.5em;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            margin: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="nav"> <!-- 부모 -->
+        <div><a href="#">menu1</a></div> <!-- 자식 -->
+        <div><a href="#">menu2</a></div>
+        <div><a href="#">menu3</a></div>
+        <div><a href="#">menu4</a></div>
+        <div><a href="#">menu5</a></div>
+    </div>
+</body>
+</html>
