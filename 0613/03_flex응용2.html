@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: dodgerblue;
+            height: 200px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .container > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="first" stlye="flex-grow: 1">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 8;">3</div>
+        <!-- <div style="">3</div>
+        <div style="order: 1">4</div> -->
+        <!-- <div class="item">1</div> 
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="tiem">4</div> -->
+     
+    </div>
+</body>
+</html>

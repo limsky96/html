@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex; /* 부모에게 flex (기본) flex쓰니까 (블럭태그)3줄에서 (플렉스)1줄로 정렬됨 (기본) */
+            background-color: dodgerblue;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            /* flex-flow: row wrap; /* 위의 2줄을 합친 것, 주로 이걸 씀 */
+            /*justify-content: space-between; flex와 관련된 아이템들 중앙정렬을 위한 */
+            height: 200px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .container > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div> 
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="tiem">4</div>
+     
+    </div>
+</body>
+</html>
