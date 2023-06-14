@@ -1,0 +1,206 @@
+@charset "utf-8"; /* 스타일 시트에 쓰이는 문자 인코딩 */
+body {
+    background:linear-gradient(to bottom, skyblue, white 40%); /* 위에서 아래로 그라데이션 */
+    background-attachment: fixed; /* 스크롤 넘겨도 고정 */
+   
+}
+
+#container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 0 auto; /* 중앙정렬 */
+}
+
+#content { /* 요안도라 소개 */
+    background-color: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#sidebar img { 
+    border:1px solid #000;
+}
+
+#footer { /* 맨 아래 주소 */
+    clear: both;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;  /* top right bottom left */
+    text-align: center;
+}
+
+/* min-width: 1024px */
+@media screen and (min-width: 1024px) {
+#container {
+    width: 960px;
+}    
+
+#mainHeader { /* 제목 배경 */
+    background-image: url(/joandora/요안도라/bg.png);
+    background-repeat: no-repeat; /* 배경이미지 반복하지 않음 */
+    height: 280px;
+}
+#mainHeader h1 { /* 제목 */
+    position: absolute; /* mainHeader 기준 */
+    margin-left: 20px;
+    margin-top: 35px;
+}
+.header1 { /* 폰트 설정 */
+    font-family: Arial; /* 폰트지정. 없으면 디폴트값 */
+    font-size: 4em;
+    color: yellow;
+    text-shadow: 0px 1px 1px #000; /* 폰트 그림자 (offset-x offset-y blur-radius) */
+}
+
+#mainNav { /* Nav */
+    background-color: green;
+    color: #fff;
+    width: 960px;
+    height: 60px;
+    margin-top: -16px;
+}
+#mainNav a{ /* 문서 연결 a태그 (a href) */
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 5px 5px 35px; /* top right bottom left */
+} 
+#mainNav ul {
+    list-style: none; /* ul 설정 없앰 */
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+#mainNav ul li { /* li */
+    display: inline; /* 줄바꿈 되지 않게 */
+}
+
+#content { /* 요안드라 소개 */
+    float: left;
+    width: 720px;
+}
+
+#sidebar {
+    float: right;
+    width: 200px;
+    background-color: #dfd;
+    padding: 20px 10px 0 10px; /* top right bottom left */
+    text-align: center;
+}
+#sidebar img {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+}
+
+/* min-width: 768px and max-width: 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+#container {
+    width: 580px;
+}  
+#mainHeader { /* 제목 배경 */
+    background-image: url(/joandora/요안도라/bg.png);
+    background-repeat: no-repeat; /* 배경이미지 반복하지 않음 */
+    height: 200px;
+}
+#mainHeader h1 { /* 제목 */
+    position: absolute; /* 부모 기준 */
+    margin-left: 20px;
+    margin-top: 35px;
+}
+.header1 { /* 폰트 설정 */
+    font-family: Arial; /* 폰트지정 없으면 디폴트값 */
+    font-size: 3em;
+    color: yellow;
+    text-shadow: 0px 1px 1px #000; /* 폰트 그림자 (offset-x offset-y blur-radius) */
+}
+
+#mainNav { /* Nav */
+    background-color: green;
+    color: #fff;
+    width: 580px;
+    height: 60px;
+    margin-top: -16px;
+}
+#mainNav a{ /* 문서 연결 a태그 href*/
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 5px 5px 35px; /* top right bottom left */
+} 
+#mainNav ul {
+    list-style: none; /* ul 설정 없앰 */
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+#mainNav ul li { /* li */
+    display: inline; /* 줄바꿈 되지 않게 */
+}
+
+#content { /* 요안드라 소개 */
+    width: 550px;
+}
+
+#sidebar {
+    float: left;
+    width: 550px;
+    background-color: #dfd;
+    margin-left: 5px;
+}
+#sidebar img {
+    border: 1px solid #ccc;
+    width: 32%;
+}
+}
+
+/* max-width: 767px */
+@media screen and (max-width: 767px) {
+#container {
+    width: 320px;
+}
+#mainHeader { /* 제목 배경 */
+    height: 100px;
+    background-color: #000;
+}
+#mainHeader h1 { /* 제목 */
+    position: absolute; /* 부모 기준 */
+    margin-left: 20px;
+}
+.header1 { /* 폰트 설정 */
+    font-family: Arial; /* 폰트지정 없으면 디폴트값 */
+    font-size: 3em;
+    color: yellow;
+    text-shadow: 0px 1px 1px #000; /* 폰트 그림자 (offset-x offset-y blur-radius) */
+}
+
+#mainNav a{ /* 문서 연결 a태그 href*/
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* 필렛 */
+} 
+#mainNav ul {
+    list-style: none; /* ul 설정 없앰 */
+}
+#mainNav ul li { /* li */
+    width: 280px;
+    margin-left: -20px;
+    margin-bottom: 10px;
+}
+
+#content { /* 요안드라 소개 */
+    width: 310px;
+}
+
+#sidebar {
+    width: 320px;
+    background-color: #fff;
+    text-align: center;
+    
+}
+#sidebar img {
+    border: 1px solid #ccc;
+    width: 90%;
+}
+}
