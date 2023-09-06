@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    // 상수 선언
+    // private final int a =1; -> 한 ㅓㅂㄴ 초기화가 되면 a값 변경 불가
+    // var study = true
+    // study = false
+    // console.log(); (study) // false
+
+    // document.write(study)
+
+
+    // 1. 호이스팅 (변수 선언을 끌어올림)
+    var study = "자바스크립트";
+
+    if (study) {
+        var study = "리액트";
+        console.log('공부하자', study); // 공부하자 리액트
+    }
+    console.log('재밌다', study); // 재밌다 리액트 
+
+    // let : 변수 영역을 코드 블럭 안으로 한정시킴 (우리가 원하는  if문 안에서 동작)
+    var study = "자바스크립트";
+
+    if (study) {
+        let study = "리액트";
+        console.log('공부하자', study); // 공부하자 리액트
+    }
+    console.log('재밌다', study); // 재밌다 자바스크립트 
+
+    //
+    //console.log(lastname + ", " + firstname + " " + middlename);
+
+    // 템플릿 문자열 
+    let lastname = '홍'
+    let firstname = '길'
+    let middlename = '동'
+
+    console.log(`${lastname}, ${firstname} ${middlename}`);
+
+    // 디폴트 파라미터 
+    function logActivity(name = "EZ", activity = "서핑") { // 생성자 만들때 유용 
+        console.log(`${name}은(는) ${activity}을(를) 좋아합니다.`);
+    }
+
+    logActivity()
+    logActivity('홍길동', '축구')
+    logActivity('홍길동') // 홍길동 서핑
+
+    // 화살표 함수
+    var lodify = function (name) { //익명 함수
+        return `열심히 공부하는 ${name}`;
+    }
+
+    console.log(lodify("EZ")); // 열심히 공부하는 EZ 
+
+    let arrowFun = name => { // const / let 둘 중 하나. 개발자는 const를 씀 ! 
+        return `열심히 공부하는 ${name}`;
+    }
+
+    arrowFun('홍길동')
+
+</script>
+
+
+<body>
+
+</body>
+
+</html>
