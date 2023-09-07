@@ -67,6 +67,70 @@
 
     arrowFun('홍길동')
 
+    // ES6 객체와 배열
+
+    let sandwich = {
+        bread: "플랫 화이트",
+        meat: "베이컨",
+        topping: ["치즈", "상추", "칠리소스"]
+    }
+
+    // 1. 객체/구조/분해를 사용한 대입
+    let { bread, meat } = sandwich
+
+    console.log(bread + meat)
+
+    // =========================================== 
+    var study = person => {
+        console.log(`오늘도 공부하는 ${person.firstname}`);
+    }
+
+    var person = {
+        firstname: "zeze",
+        lastname: "E"
+    }
+
+    study(person); // 오늘도 공부하는 zeze
+
+    // ===========================================   
+
+    var [firstResort] = ["용평", "평창", "강촌"];
+
+    console.log(firstResort); // 용평
+
+    var [, , thirdResort] = ["용평", "평창", "강촌"];
+
+    console.log(thirdResort); // 강촌
+
+    // 2. 객체/리터럴/개선
+    // 구조를 사용하면 현재 영역에 있는 변수를 객체의 필드로 묶을 수 있다 
+    var name = "백두산";
+    var elevation = 2744; // 높이(단위: 미터)
+    var print = function () {
+        console.log(`${this.name}의 높이는 ${this.elevation}m 입니다.`);
+    }
+
+
+    var funHike = { name, elevation, print };
+
+    console.log(funHike) // {name: "백두산", elavation: 2744}
+    funHike.print()
+
+    // 3. 스프레드 연산자(...) = 복사  => 원본 훼손 안 시키고 싶을때 사용 ! 
+    var food = ["닭갈비", "닭꼬치", "닭강정"]
+    var drink = ["소주", "맥주"]
+    var ezFavorite = [...food, ...drink]
+
+    console.log(ezFavorite.join(','))  // 닭갈비, 닭꼬치, 닭강정, 소주, 맥주
+
+    var food = ["닭갈비", "닭꼬치", "닭강정"]
+    var [last] = food.reverse(); // 닭강정 닭꼬치 닭갈비  -> 원본 훼손 안 시키려면 [...food].reverse
+
+    console.log(last); // 닭강정 
+    console.log(food.join(',')) // 닭강정, 닭꼬치, 닭갈비
+
+
+
 </script>
 
 
