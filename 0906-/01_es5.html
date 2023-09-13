@@ -129,8 +129,51 @@
     console.log(last); // 닭강정 
     console.log(food.join(',')) // 닭강정, 닭꼬치, 닭갈비
 
+    //////////////////////////////////////////////////////////////////////
+
+    function directions(...args) {
+        var [start, ...remaining] = args;
+        var [finish, ...stops] = remaining.reverse();
+
+        console.log(`${args.length} 도시를 운행합니다.`);
+        console.log(`${start}에서 출발합니다.`);
+        console.log(`목적지는 ${finish}입니다.`);
+        console.log(`중간에 ${stops.length}군데 들립니다.`);
+    }
+
+    directions("서울", "수원", "천안", "대전", "대구", "부산");
+
+    // 클래스
+    class Vacation {
+
+        constructor(destination, length) {
+            this.destination = destination;
+            this.length = length;
+        }
+
+        print() {
+            console.log(`${this.destination}은(는) ${this.length}일 걸립니다.`);
+        }
+
+    }
+
+    const trip = new Vacation("칠레 산티아고", 7)
+
+    trip.print()
+    console.log(trip.print())
+    document.write(trip.print())
 
 
+    function User(name) {
+        this.name = name;
+        this.isAdmin = false;
+    }
+
+    // 팝업창으로 뜸 
+    let user = new User("보라");
+
+    alert(user.name); // 보라
+    alert(user.isAdmin); // false
 </script>
 
 
